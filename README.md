@@ -32,7 +32,8 @@ Remember, some features might need you to be the host.
 
 Credits:  
 A big shout-out to anyone who contributed their ideas and insights.  
-  
+Also thank you to a UC contributor for the spawn enemy.
+
 Note:  
 Sorry for any bad code / Bad practices as it has been a few years since I've actually coded something in C#. This was also coded in a day. It was a fun challenge to dive back into C# and try it out again.  
 
