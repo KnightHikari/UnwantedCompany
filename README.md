@@ -32,6 +32,8 @@ High jump
 Player list  
 Remember, some features might need you to be the host.  
 
+For 'Late Join', press 'Waiting for Crew Sync Fix' to allow newly joined players to play.
+
 Credits:  
 A big shout-out to anyone who contributed their ideas and insights.  
 Also thank you to a UC contributor for the spawn enemy.
