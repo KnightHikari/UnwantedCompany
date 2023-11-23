@@ -7,6 +7,8 @@ https://github.com/BepInEx/BepInEx.MelonLoader.Loader/releases/download/v2.1.0/M
 
 https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip  
 
+https://github.com/solarisc/UnwantedCompany/releases/download/main/WrongCompany.dll  
+
 Once you've got them, extract all the contents from the zip files. Drag and drop everything into your Lethal Company game folder. If it asks you to replace files, go ahead and do it.  
 
 Next, you're gonna want to find your "\Lethal Company\MLLoader\MelonLoader" folder. That's where you'll drop the UnwantedCompany.dll file.  
