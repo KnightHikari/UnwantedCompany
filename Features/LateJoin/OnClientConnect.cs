@@ -63,7 +63,29 @@ namespace UnwantedCompany
                         Console.WriteLine($"Error creating delegate for method {pair.Value}: {e}");
                     }
                 }
+                
+                RoundManager roundManager = GameObject.FindObjectOfType<RoundManager>();
 
+                var initiateClientRpc = typeof(RoundManager).GetMethod("__beginSendClientRpc", BindingFlags.NonPublic | BindingFlags.Instance);
+                var concludeClientRpc = typeof(RoundManager).GetMethod("__endSendClientRpc", BindingFlags.NonPublic | BindingFlags.Instance);
+
+                var rpcParameters = new ClientRpcParams
+                {
+                    Send = new ClientRpcSendParams
+                    {
+                        TargetClientIds = new List<ulong> { clientId }, 
+                    }
+                };
+
+                FastBufferWriter bufferWriterForFirstRpc = (FastBufferWriter)initiateClientRpc.Invoke(roundManager, new object[] { 1193916134U, rpcParameters, 0 });
+                BytePacker.WriteValueBitPacked(bufferWriterForFirstRpc, StartOfRound.Instance.randomMapSeed);
+                BytePacker.WriteValueBitPacked(bufferWriterForFirstRpc, StartOfRound.Instance.currentLevelID);
+
+                concludeClientRpc.Invoke(roundManager, new object[] { bufferWriterForFirstRpc, 1193916134U, rpcParameters, 0 });
+
+                FastBufferWriter bufferWriterForSecondRpc = (FastBufferWriter)initiateClientRpc.Invoke(roundManager, new object[] { 2729232387U, rpcParameters, 0 });
+
+                concludeClientRpc.Invoke(roundManager, new object[] { bufferWriterForSecondRpc, 2729232387U, rpcParameters, 0 });
             }
         }
     }
