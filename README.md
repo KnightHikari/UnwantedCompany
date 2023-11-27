@@ -11,7 +11,9 @@ https://github.com/solarisc/UnwantedCompany/releases/download/main/WrongCompany.
 
 Once you've got them, extract all the contents from the zip files. Drag and drop everything into your Lethal Company game folder. If it asks you to replace files, go ahead and do it.  
 
-Next, you're gonna want to find your "\Lethal Company\MLLoader\Mods" folder. That's where you'll drop the UnwantedCompany.dll file. You can create the folder if it doesn't exist.
+Next launch the game. Once the main menu appears, close the game. navigate to the "\Lethal Company\MLLoader\Mods" folder. This is where you will place the UnwantedCompany.dll file.
+
+Now you can use the cheat.
 
 Features:  
 God Mode  
