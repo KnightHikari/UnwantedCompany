@@ -11,7 +11,7 @@ https://github.com/solarisc/UnwantedCompany/releases/download/main/WrongCompany.
 
 Once you've got them, extract all the contents from the zip files. Drag and drop everything into your Lethal Company game folder. If it asks you to replace files, go ahead and do it.  
 
-Next, you're gonna want to find your "\Lethal Company\MLLoader\MelonLoader" folder. That's where you'll drop the UnwantedCompany.dll file.  
+Next, you're gonna want to find your "\Lethal Company\MLLoader\Mods" folder. That's where you'll drop the UnwantedCompany.dll file. You can create the folder if it doesn't exist.
 
 Features:  
 God Mode  
