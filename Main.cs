@@ -42,7 +42,7 @@ namespace UnwantedCompany
 
         public override void OnLateUpdate()
         {
-            if (Keyboard.current[Key.Insert].wasPressedThisFrame)
+            if (Keyboard.current[Key.F].wasPressedThisFrame)
             {
                 Settings.Instance.menuOpen = !Settings.Instance.menuOpen;
             }
