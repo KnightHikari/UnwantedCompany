@@ -214,7 +214,7 @@ namespace UnwantedCompany
                 {
                     Application.OpenURL("https://steamcommunity.com/profiles/" + Settings.Instance.selectedPlayer.playerSteamId);
                 }
-                if (GUILayout.Button("Kill (Host)"))
+                if (GUILayout.Button("Kill"))
                 {
                     //Vector3 vector3 = new Vector3(1f, 1f, 1f);
                     //Settings.Instance.selectedPlayer.KillPlayer(vector3, true, CauseOfDeath.Suffocation, 0);
